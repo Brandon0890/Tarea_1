@@ -1,32 +1,33 @@
 # Tarea_1
-Import random
+import random
 
-X1 = 0
-X2 = 0
-B = 1
-WX1 = O
-WX2 = 0
-WXB = 0
 Y = 0
-Sumatoria = 0
+B = 1
+x1 = 0
+x2 = 0
+wx1 = 0
+wx2 = 0
+wxB = 0
+sum = 0
 
-Print("Perceptron simple")
+print("Tarea 1 _____Perceptron simple____")
 
-X1 = float(input("Ingrsa X1: "))
-X2 = float(input("Ingrsa X2: "))
+x1 = float(input("Por favor ingresa el primer valor (x1): "))
+x2 = float(input("Por favor ingresa el segundo valor (x2): "))
 
-WX1 = random.uniform(-1, 1)
-WX2 = random.uniform(-1, 1)
-WXB = random.uniform(-1, 1)
+wx1 = random.uniform(-1, 1)
+wx2 = random.uniform(-1, 1)
+wxB = random.uniform(-1, 1)
 
-B = B * WXB
+B = B * wxB
+sum = (x1 * wx1) + (x2 * wx2) + B
 
-Sumatoria = (X1 * WX1) + (X2 * WX2) + B
 
-if (sumatoria >= 0):
+if (sum >= 0):
   Y = 1
 else:
   Y = 0
 
-print("Resultado Sumatoria: ", Sumatoria)
-print("Resultado Salida(Y): ", Y)
+print("°°°°LISTO ESTOS SON TUS RESULTADOS°°°°")
+print("Resultado de la Sumatoria: ", sum)
+print("Resultado de la Salida(Y): ", Y)
